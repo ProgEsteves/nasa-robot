@@ -34,11 +34,11 @@ Response:
 
 ### Stop
 
-`./run_container.sh start`
+`./run_container.sh stop`
 
 ### Unit tests
 
-`./run_container.sh start`
+`./run_container.sh tests`
 
 ## Standalone execution
 
