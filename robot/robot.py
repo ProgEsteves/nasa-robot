@@ -110,7 +110,7 @@ class Robot(object):
 	### d to direction
 	### return text format
 	def getLocationText(self):
-		data = "({},{},{})".format(
+		data = "({}, {}, {})".format(
 			self.position.x.get,
 			self.position.y.get,
 			self.orientation.name
@@ -140,7 +140,7 @@ class Robot(object):
 			}
 			options[cmd]()
 		else:
-			raise Exception()
+			raise OutOfBoundException()
 
 	### move on ground step by step to direction on orientation
 	def doStep(self):
@@ -172,7 +172,7 @@ class Robot(object):
 	def goSouth(self, steps=1):
 		self.position.y.sub(steps);
 
-	### do step(s) in wast direction
+	### do step(s) in west direction
 	def goWest(self, steps=1):
 		self.position.x.sub(steps);
 
