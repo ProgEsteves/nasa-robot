@@ -42,9 +42,19 @@ Response:
 
 ## Standalone execution
 
-### Start
+### Prerequisites to API
 
-`puthon3 run.py`
+`pip3 install eve`
+
+### Start API
+
+`python3 run.py`
+
+## Tests
+
+### Prerequisites to tests
+
+`pip3 install requests unittest`
 
 ### Unit tests
 
