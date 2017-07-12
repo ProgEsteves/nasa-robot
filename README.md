@@ -59,5 +59,3 @@ Response:
 ### Unit tests
 
 `puthon3 tests.py`
-
-.
