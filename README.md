@@ -42,20 +42,28 @@ Response:
 
 ## Standalone execution
 
-### Prerequisites to API
+### Install prerequisites
 
-`pip3 install eve`
+`pip3 install -r requirements.txt`
 
 ### Start API
 
-`python3 run.py`
-
-## Tests
-
-### Prerequisites to tests
-
-`pip3 install requests unittest`
+`python3 robot/run.py`
 
 ### Unit tests
 
-`puthon3 tests.py`
+`puthon3 robot/tests.py`
+
+### Terminal output example
+
+```
+esteves@morpheus:~/projetos/nasa/robotpy$ python robot/run.py
+ * Running on http://0.0.0.0:8080/
+127.0.0.1 - - [12/Jul/2017 08:00:05] "GET /rest/mars/LLLL HTTP/1.1" 200 -
+127.0.0.1 - - [12/Jul/2017 08:00:05] "GET /rest/mars/RRRR HTTP/1.1" 200 -
+127.0.0.1 - - [12/Jul/2017 08:00:05] "POST /rest/mars/AAA HTTP/1.1" 400 -
+127.0.0.1 - - [12/Jul/2017 08:00:05] "POST /rest/mars/MMLMMMMMMMMMMM HTTP/1.1" 400 -
+127.0.0.1 - - [12/Jul/2017 08:00:05] "POST /rest/mars/MML HTTP/1.1" 200 -
+127.0.0.1 - - [12/Jul/2017 08:00:05] "GET /rest/mars/MMMMMRMMMMMRMMMMMRMMMMMR HTTP/1.1" 200 -
+127.0.0.1 - - [12/Jul/2017 08:00:05] "GET /rest/mars/MMRMMRMM HTTP/1.1" 200 -
+```
