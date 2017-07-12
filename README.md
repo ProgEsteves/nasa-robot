@@ -57,7 +57,7 @@ Response:
 ### Terminal output example
 
 ```
-esteves@morpheus:~/projetos/nasa/robotpy$ python robot/run.py
+esteves@morpheus:~/projects/nasa/robotpy$ python robot/run.py
  * Running on http://0.0.0.0:8080/
 127.0.0.1 - - [12/Jul/2017 08:00:05] "GET /rest/mars/LLLL HTTP/1.1" 200 -
 127.0.0.1 - - [12/Jul/2017 08:00:05] "GET /rest/mars/RRRR HTTP/1.1" 200 -
