@@ -12,7 +12,7 @@ Technical Challenger
 
 ## Request API example
 
-Command:
+Command to REST:
 
 `curl -s --request POST http://localhost:8080/rest/mars/MMRMMRMM`
 
@@ -20,6 +20,18 @@ Response:
 
 ```
 { "x": 2, "y": 0, "d": "S" }
+```
+
+OR
+
+Command:
+
+`curl -s --request POST http://localhost:8080/text/mars/MMRMMRMM`
+
+Response:
+
+```
+(2, 0, S)
 ```
 
 * "x" to axis x
@@ -59,11 +71,13 @@ Response:
 ```
 esteves@morpheus:~/projects/nasa/robotpy$ python robot/run.py
  * Running on http://0.0.0.0:8080/
-127.0.0.1 - - [12/Jul/2017 08:00:05] "GET /rest/mars/LLLL HTTP/1.1" 200 -
-127.0.0.1 - - [12/Jul/2017 08:00:05] "GET /rest/mars/RRRR HTTP/1.1" 200 -
-127.0.0.1 - - [12/Jul/2017 08:00:05] "POST /rest/mars/AAA HTTP/1.1" 400 -
-127.0.0.1 - - [12/Jul/2017 08:00:05] "POST /rest/mars/MMLMMMMMMMMMMM HTTP/1.1" 400 -
-127.0.0.1 - - [12/Jul/2017 08:00:05] "POST /rest/mars/MML HTTP/1.1" 200 -
-127.0.0.1 - - [12/Jul/2017 08:00:05] "GET /rest/mars/MMMMMRMMMMMRMMMMMRMMMMMR HTTP/1.1" 200 -
-127.0.0.1 - - [12/Jul/2017 08:00:05] "GET /rest/mars/MMRMMRMM HTTP/1.1" 200 -
+ 127.0.0.1 - - [12/Jul/2017 08:09:29] "POST /rest/mars/LLLL HTTP/1.1" 200 -
+ 127.0.0.1 - - [12/Jul/2017 08:09:29] "POST /rest/mars/RRRR HTTP/1.1" 200 -
+ 127.0.0.1 - - [12/Jul/2017 08:09:29] "POST /rest/mars/AAA HTTP/1.1" 400 -
+ 127.0.0.1 - - [12/Jul/2017 08:09:29] "POST /rest/mars/MMLMMMMMMMMMMM HTTP/1.1" 400 -
+ 127.0.0.1 - - [12/Jul/2017 08:09:29] "POST /rest/mars/MML HTTP/1.1" 200 -
+ 127.0.0.1 - - [12/Jul/2017 08:09:29] "POST /text/mars/MML HTTP/1.1" 200 -
+ 127.0.0.1 - - [12/Jul/2017 08:09:29] "POST /rest/mars/MMMMMRMMMMMRMMMMMRMMMMMR HTTP/1.1" 200 -
+ 127.0.0.1 - - [12/Jul/2017 08:09:29] "POST /rest/mars/MMRMMRMM HTTP/1.1" 200 -
+ 127.0.0.1 - - [12/Jul/2017 08:09:29] "POST /text/mars/MMRMMRMM HTTP/1.1" 200 -
 ```
