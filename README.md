@@ -1,4 +1,4 @@
-## Description of NASA ROBOT Challenger
+### NASA ROBOT Challenger
 
 Technical Challenger
 
@@ -24,24 +24,24 @@ Response:
 
 ## Docker runner
 
-# Start
+### Start
 
 `./run_container.sh start`
 
-# Stop
+### Stop
 
 `./run_container.sh start`
 
-# Unit tests
+### Unit tests
 
 `./run_container.sh start`
 
 ## Standalone execution
 
-# Start
+### Start
 
 `puthon3 run.py`
 
-# Unit tests
+### Unit tests
 
 `puthon3 tests.py`
