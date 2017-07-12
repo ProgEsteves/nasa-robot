@@ -10,7 +10,7 @@ Technical Challenger
 * The robot should respect the terrain limits.
 * The robot should't save positions log.
 
-## Request API example
+## Request API examples
 
 Command to REST:
 
@@ -24,7 +24,7 @@ Response:
 
 OR
 
-Command:
+Command to TEXT:
 
 `curl -s --request POST http://localhost:8080/text/mars/MMRMMRMM`
 
