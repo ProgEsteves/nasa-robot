@@ -1,5 +1,4 @@
 # -*- coding: utf-8 -*-
-from flask import request
 from eve import Eve
 
 app = Eve()
