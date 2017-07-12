@@ -3,6 +3,12 @@
 from enum import Enum
 from flask import abort, json
 
+class InvalidCommandException(Exception):
+	def __init__(self, value):
+		self.value = value
+	def __str__(self):
+		return repr("Invalid command")
+
 class OutOfBoundException(Exception):
 	def __init__(self, value):
 		self.value = value
@@ -140,7 +146,7 @@ class Robot(object):
 			}
 			options[cmd]()
 		else:
-			raise OutOfBoundException()
+			raise InvalidCommandException()
 
 	### move on ground step by step to direction on orientation
 	def doStep(self):
