@@ -22,9 +22,9 @@ Response:
 { "x": 2, "y": 0, "d": "S" }
 ```
 
-* x to axis x
-* y to axis y
-* d to direction (West, North, East and South)
+* "x" to axis x
+* "y" to axis y
+* "d" to direction ("W"est, "N"orth, "E"ast and "S"outh)
 
 ## Docker runner
 
