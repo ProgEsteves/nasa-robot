@@ -5,7 +5,7 @@ RUN pip3 install eve requests
 
 EXPOSE 8080
 RUN mkdir -p /opt/robot
-ADD robot/* /opt/robot/
+ADD robot/*.py /opt/robot/
 
 WORKDIR /opt/robot
 
